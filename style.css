@@ -8,10 +8,9 @@ a {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
-  padding-left: 5px;
 }
 
 nav {
@@ -81,7 +80,7 @@ header p {
 
 section {
   height: auto;
-  padding: 50px 0 50px;
+  padding: 50px 0;
 }
 
 .specialist h2 {
@@ -143,7 +142,7 @@ section {
 
 .box {
   aspect-ratio: 1;
-  width: 198px;
+  width: 300px;
   background-color: rgba(241, 241, 241, 1);
   position: relative;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -182,7 +181,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0 0;
+  padding: 15px;
 }
 
 footer i {
@@ -202,34 +201,15 @@ footer i:nth-of-type(2n) {
   padding: 38px 0 0;
 }
 
-@media only screen and (min-width: 425px) {
-  .container {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-  }
-
-  .header-container h1 {
-    width: 80%;
-  }
-
+@media only screen and (min-width: 450px) {
   header p {
     margin: 42px 0 42px;
-  }
-
-  .specialist h2 {
-    padding: 0 0 60px 0;
-    text-align: center;
   }
 
   .text-wrapper {
     display: flex;
     flex-direction: column;
     text-align: justify;
-  }
-
-  .circle-1 {
-    margin: 0 auto 50px;
   }
 
   .person {
@@ -239,17 +219,10 @@ footer i:nth-of-type(2n) {
   .description {
     display: flex;
     justify-content: center;
-    text-align: justify;
-  }
-
-  .circle-2 {
-    margin: 0 auto 50px;
   }
 
   .offer h2 {
     font-size: 36px;
-    padding: 0 0 83px 0;
-    text-align: center;
   }
 
   .container-grid {
@@ -259,19 +232,15 @@ footer i:nth-of-type(2n) {
     justify-content: center;
   }
 
+  .box {
+    width: 198px;
+  }
+
   .dot-new {
     width: 22px;
     aspect-ratio: 1;
     top: -11px;
     left: -11px;
-  }
-
-  footer {
-    height: 147px;
-  }
-
-  .container-footer {
-    height: 100%;
   }
 
   .container-footer p {
@@ -283,8 +252,6 @@ footer i:nth-of-type(2n) {
 @media only screen and (min-width: 960px) {
   .container {
     width: 960px;
-    height: 100%;
-    margin: 0 auto;
   }
 
   .nav-container {
@@ -303,10 +270,6 @@ footer i:nth-of-type(2n) {
     cursor: not-allowed;
   }
 
-  header p {
-    margin: 62px 0 42px;
-  }
-
   .button-offer {
     transition-duration: 1s;
   }
@@ -322,8 +285,6 @@ footer i:nth-of-type(2n) {
   }
 
   .text-wrapper {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
   }
 
@@ -372,7 +333,7 @@ footer i:nth-of-type(2n) {
 
   .box {
     font-size: 18px;
-    transition-duration: 500ms;
+    transition-duration: 0.5s;
   }
 
   .box:hover {
@@ -387,9 +348,12 @@ footer i:nth-of-type(2n) {
     height: 71px;
   }
 
+  .icons-wrapper {
+    padding: 0 auto;
+  }
+
   .container-footer {
     display: flex;
-    height: 100%;
     justify-content: space-between;
     align-items: center;
   }
