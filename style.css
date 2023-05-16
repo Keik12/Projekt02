@@ -3,7 +3,8 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-a {
+.specialist-link,
+.offer-link {
   text-decoration: none;
 }
 
@@ -13,9 +14,10 @@ a {
   margin: 0 auto;
 }
 
-nav {
+.nav {
   height: 50px;
   background-color: #4e4e4e;
+  text-decoration: none;
 }
 
 .nav-container {
@@ -23,13 +25,15 @@ nav {
   align-items: center;
 }
 
-.nav-container span {
+.nav-span {
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
 }
 
-nav a {
+.specialist-link,
+.offer-link,
+.disabled {
   font-size: 18px;
   color: rgba(241, 241, 241, 1);
 }
@@ -46,7 +50,7 @@ nav a {
   color: rgba(255, 255, 255, 1);
 }
 
-header {
+.header {
   height: calc(100vh - 50px);
   background: url(./assets/bg.jpg) no-repeat center;
   background-size: cover;
@@ -57,13 +61,13 @@ header {
   background: rgba(0, 0, 0, 0.15);
 }
 
-.header-container h1 {
+.header-container-h1 {
   font-size: 36px;
   width: 80%;
   line-height: 42px;
 }
 
-header p {
+.header-p {
   font-size: 18px;
   margin: 62px 0 42px;
 }
@@ -76,14 +80,16 @@ header p {
   width: 164px;
   padding: 14px 58px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-section {
+.specialist,
+.offer {
   height: auto;
   padding: 50px 0;
 }
 
-.specialist h2 {
+.specialist-h2 {
   font-size: 36px;
   font-weight: bold;
   color: rgba(21, 45, 65, 1);
@@ -125,7 +131,7 @@ section {
   background-color: rgba(64, 93, 120, 1);
 }
 
-.offer h2 {
+.offer-h2 {
   font-size: 26px;
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
@@ -168,7 +174,7 @@ section {
   left: -19px;
 }
 
-footer {
+.footer {
   height: 147px;
   background: rgba(78, 78, 78, 1);
 }
@@ -184,16 +190,16 @@ footer {
   padding: 15px;
 }
 
-footer i {
+.footer-i {
   color: rgba(255, 255, 255, 1);
   font-size: 31px;
 }
 
-footer i:nth-of-type(2n) {
+.footer-i:nth-of-type(2n) {
   margin-left: 18px;
 }
 
-.container-footer p {
+.container-footer-p {
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
@@ -202,7 +208,7 @@ footer i:nth-of-type(2n) {
 }
 
 @media only screen and (min-width: 450px) {
-  header p {
+  .header-p {
     margin: 42px 0 42px;
   }
 
@@ -221,7 +227,7 @@ footer i:nth-of-type(2n) {
     justify-content: center;
   }
 
-  .offer h2 {
+  .offer-h2 {
     font-size: 36px;
   }
 
@@ -243,7 +249,7 @@ footer i:nth-of-type(2n) {
     left: -11px;
   }
 
-  .container-footer p {
+  .container-footer-p {
     text-align: center;
     padding: 38px 0 0;
   }
@@ -279,7 +285,7 @@ footer i:nth-of-type(2n) {
     color: black;
   }
 
-  .specialist h2 {
+  .specialist-h2 {
     padding: 0 0 78px 0;
     text-align: left;
   }
@@ -320,7 +326,7 @@ footer i:nth-of-type(2n) {
     margin: 0 0 0 60px;
   }
 
-  .offer h2 {
+  .offer-h2 {
     text-align: left;
   }
 
@@ -344,7 +350,7 @@ footer i:nth-of-type(2n) {
     font-size: 15px;
   }
 
-  footer {
+  .footer {
     height: 71px;
   }
 
